@@ -21,4 +21,23 @@ CPU：Intel® Core™ i5-4590 CPU @ 3.30GHz × 4
 ```shell
  webbench -c 50 -t 100 -k http://127.0.0.1:8080/demo/index/index
 ```
+### 软件信息
+
+#### Nginx
+
+版本 nginx/1.4.6 (Ubuntu)
+
+VHOST配置
+```
+server {
+    listen 80 default_server;
+    root /data/webroot;
+    index index.html;
+}
+```
+
+测试页面
+<h1>Hello World!</h1>
+进程数量
+Nginx开启了4个Worker进程
 
