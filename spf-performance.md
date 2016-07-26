@@ -15,7 +15,7 @@
 
 CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 内存：8G
-磁盘：Seagate Constellation ES ST3500514NS 500G
+磁盘：Seagate Constellation ES ST3500514NS 500G ATA
 操作系统：Ubuntu14.04 Linux TENCENT64.site 2.6.32.43-tlinux-1.0.10-default
 网卡： Intel Corporation 82576 Gigabit Network Connection x2
 
