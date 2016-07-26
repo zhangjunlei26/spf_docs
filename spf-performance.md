@@ -1,10 +1,11 @@
 # spf性能
 ## 性能对比
-使用apache bench工具对PHP7+Swoole Http程序、spf、spf-mvc-demo进行压力测试。
+使用apache bench工具对swoole http、spf http、spf-http-mvc-demo进行压力测试。
 
-| 0:0 | 1:0 |
+| 软件 | QPS |
 | -- | -- |
-| 0:2 | 1:2 |
-| 0:3 | 1:3 |
+| Swoole Http  | 1:2 |
+| Spf Http     | 1:3 |
+| Spf MVC demo | 1:3 |
 
 
