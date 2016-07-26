@@ -59,7 +59,21 @@ php-fpm 最小50进程，最大2000进程
 
 #### swoole+php7.0.8
 测试代码
-```
+```php
+<?php
+$http = new swoole_http_server("0.0.0.0", 8080, SWOOLE_BASE);
+$http->set([
+    'worker_num'  => 8,
+]);
 
+$http->on('request', function ($request, swoole_http_response $response) {
+    $response->header('Last-Modified', 'Tue, 26 Jul 2016 10:24:27 GMT');
+    $response->header('E-Tag', '55829c5b-17');
+    $response->header('Accept-Ranges', 'bytes');    
+    $response->end("<h1>\nHello World.\n</h1>");
+});
+
+$http->start();
+[root@TENCENT64 /data/home/rosenzhang/ros
 ```
 
