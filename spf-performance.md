@@ -22,7 +22,7 @@ CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 ### 压测工具
 
 ```shell
- webbench -c 50 -t 100 -k http://127.0.0.1:8080/demo/index/index
+ webbench -c 50 -t 100 -k http://127.0.0.1:8080/
 ```
 ### 软件信息
 
