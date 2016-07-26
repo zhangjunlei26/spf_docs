@@ -48,8 +48,11 @@ server {
 }
 ```
 
-测试页面
-<h1>Hello World!</h1>
+测试页面index.php
+```php
+<?php
+    echo "Hello World!";
+```
 进程数量
 Nginx开启了4个Worker进程
 
