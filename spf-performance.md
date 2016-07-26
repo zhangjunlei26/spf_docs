@@ -1,6 +1,6 @@
 # spf性能
 ## 性能对比
-使用apache bench工具对nginx/php-fpm、swoole http、spf http、spf-http-mvc-demo进行压力测试。
+使用webbench工具对nginx/php-fpm、swoole http、spf http、spf-http-mvc-demo进行压力测试。
 
 | 软件 | QPS |
 | -- | -- |
@@ -19,5 +19,5 @@ CPU：Intel® Core™ i5-4590 CPU @ 3.30GHz × 4
 ### 压测工具
 
 ```shell
- ab -c 100 -n 1000000 -k http://127.0.0.1:8080/
+ webbench -c 100 -t 100 -k http://127.0.0.1:8080/demo/index/index
 ```
