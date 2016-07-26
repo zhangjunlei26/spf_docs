@@ -4,10 +4,10 @@
 
 | 软件 | QPS |
 | -- | -- |
-| nginx/php-fpm  | 1:2 |
+| Nginx/Php-fpm  | 1:2 |
 | Swoole Http    | 1:2 |
 | Spf Http       | 1:3 |
-| Spf MVC demo   | 1:3 |
+| Spf MVC Demo   | 1:3 |
 
 ## 测试环境
 
