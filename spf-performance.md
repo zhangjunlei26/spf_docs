@@ -4,10 +4,10 @@
 
 | 软件 | QPS |
 | -- | -- |
-| nginx/php-fpm  | 1:2 |
+| Nginx/Php-fpm  | 1:2 |
 | Swoole Http    | 1:2 |
 | Spf Http       | 1:3 |
-| Spf MVC demo   | 1:3 |
+| Spf MVC Demo   | 1:3 |
 
 ## 测试环境
 
@@ -93,3 +93,5 @@ class DemoWorker extends Base implements IWorker
 }
 ```
 复制spf/conf/demo.php为foo.php，修改其中的`worker_class`为上面创建的类名：`\demo\spf\DemoWorker`，启用服务使用spf命令`spf start foo`。
+
+#### spf  demo
