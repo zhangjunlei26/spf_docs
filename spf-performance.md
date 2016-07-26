@@ -17,7 +17,7 @@ CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 内存：8G
 磁盘：Seagate Constellation ES ST3500514NS 500G ATA
 网卡： Intel Corporation 82576 Gigabit Network Connection x2
-操作系统：Tencent tlinux release 1.2 (Final) 2.6.32.43-tlinux-1.0.10-default
+操作系统：Tencent tlinux release 1.2 (Final) 2.6.32.43-tlinux-1.0.10-default (kbuild@tlinux12) (gcc version 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC) )
 
 ### 压测工具
 
