@@ -10,11 +10,14 @@
 | Spf MVC demo   | 1:3 |
 
 ## 测试环境
+
 ### 硬件配置
-CPU：Intel® Core™ i5-4590 CPU @ 3.30GHz × 4
-内存：16G
-磁盘：128G SSD
-操作系统：Ubuntu14.04 (Linux 3.16.0-55-generic)
+
+CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
+内存：8G
+磁盘：500G SSD
+操作系统：Ubuntu14.04 Linux TENCENT64.site 2.6.32.43-tlinux-1.0.10-default
+网卡： Intel Corporation 82576 Gigabit Network Connection x2
 
 ### 压测工具
 
@@ -23,7 +26,7 @@ CPU：Intel® Core™ i5-4590 CPU @ 3.30GHz × 4
 ```
 ### 软件信息
 
-#### Nginx
+#### Nginx+php
 
 版本 nginx/1.4.6 (Ubuntu)
 
@@ -32,7 +35,16 @@ VHOST配置
 server {
     listen 80 default_server;
     root /data/webroot;
-    index index.html;
+    index index.html index.htm index.php;
+    location / {
+    	try_files $uri $uri/ /index.php?uri=$uri;
+    }
+    location ~ ^.*\.php {
+        root /usr/local/baoweb;
+        fastcgi_pass   127.0.0.1:9100;
+        include "fastcgi.conf";
+        fastcgi_index  index.php;
+    }
 }
 ```
 
