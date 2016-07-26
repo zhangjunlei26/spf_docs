@@ -16,8 +16,8 @@
 CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 内存：8G
 磁盘：Seagate Constellation ES ST3500514NS 500G ATA
-操作系统：Ubuntu14.04 Linux TENCENT64.site 2.6.32.43-tlinux-1.0.10-default
 网卡： Intel Corporation 82576 Gigabit Network Connection x2
+操作系统：Linux TENCENT64.site 2.6.32.43-tlinux-1.0.10-default
 
 ### 压测工具
 
@@ -26,9 +26,9 @@ CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 ```
 ### 软件信息
 
-#### Nginx+php
+#### nginx+php
 
-版本 nginx/1.4.6 (Ubuntu)
+版本 nginx/1.8.1
 
 VHOST配置
 ```
@@ -55,4 +55,7 @@ server {
 ```
 进程数量
 Nginx开启了4个Worker进程
+php-fpm 最小50进程，最大2000进程
+
+#### swoole
 
