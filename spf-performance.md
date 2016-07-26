@@ -19,5 +19,5 @@ CPU：Intel® Core™ i5-4590 CPU @ 3.30GHz × 4
 ### 压测工具
 
 ```shell
- webbench -c 100 -t 100 -k http://127.0.0.1:8080/demo/index/index
+ webbench -c 50 -t 100 -k http://127.0.0.1:8080/demo/index/index
 ```
