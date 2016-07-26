@@ -81,8 +81,15 @@ $http->start();
 <?php
 namespace demo\spf;
 use spf\Swoole\Worker\Base;
+use spf\Swoole\Worker\IWorker;
 class DemoWorker extends Base implements IWorker 
 {
-  
+   public function onRequest(\swoole_http_request $request = null, \swoole_http_response $response = null) {
+      $response->header('Last-Modified', 'Tue, 26 Jul 2016 10:24:27 GMT');
+      $response->header('E-Tag', '55829c5b-17');
+      $response->header('Accept-Ranges', 'bytes');    
+      $response->end("<h1>\nHello World.\n</h1>");    
+   }
 }
 ```
+复制spf/conf/demo.php为foo.php，修改其中的`worker_class`为上面创建的类名：`\demo\spf\DemoWorker`，启用服务使用spf命令`spf start foo`。
