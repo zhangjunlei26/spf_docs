@@ -74,6 +74,5 @@ $http->on('request', function ($request, swoole_http_response $response) {
 });
 
 $http->start();
-[root@TENCENT64 /data/home/rosenzhang/ros
 ```
 
