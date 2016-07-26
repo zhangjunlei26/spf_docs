@@ -77,4 +77,12 @@ $http->start();
 ```
 #### spf Http
 代码如下：
-
+```php
+<?php
+namespace demo\spf;
+use spf\Swoole\Worker\Base;
+class DemoWorker extends Base implements IWorker 
+{
+  
+}
+```
