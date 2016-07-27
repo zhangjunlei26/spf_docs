@@ -315,6 +315,40 @@ Requests per second:    48310.19 [#/sec] (mean)
 ![spf-demo](spf-demo.png)
 #### 3.4.2 ab
 ```
+ab -k -c 100 -n 5000000 http://127.0.0.1:8080/demo/index/index
+
+Document Path:          /demo/index/index
+Document Length:        23 bytes
+
+Concurrency Level:      100
+Time taken for tests:   53.503 seconds
+Complete requests:      5000000
+Failed requests:        0
+Keep-Alive requests:    5000000
+Total transferred:      1320000000 bytes
+HTML transferred:       115000000 bytes
+Requests per second:    93453.19 [#/sec] (mean)
+Time per request:       1.070 [ms] (mean)
+Time per request:       0.011 [ms] (mean, across all concurrent requests)
+Transfer rate:          24093.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       5
+Processing:     0    1   0.7      1      27
+Waiting:        0    1   0.7      1      27
+Total:          0    1   0.7      1      27
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      2
+  95%      2
+  98%      2
+  99%      3
+ 100%     27 (longest request)
 ```
 
 ## 4 总结
