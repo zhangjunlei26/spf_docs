@@ -99,9 +99,11 @@ class DemoWorker extends Base implements IWorker
 
 ## 测试结果
 ###nginx+php-fpm
-webbench -c 100 -t 100 http://test.bao.qq.com/spf/test.php
+
 
 ```
+webbench -c 100 -t 100 http://test.bao.qq.com/spf/test.php
+
 Webbench - Simple Web Benchmark 1.5
 Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 
