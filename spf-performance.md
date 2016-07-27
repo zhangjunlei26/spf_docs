@@ -124,7 +124,7 @@ class DemoWorker extends Base implements IWorker
 ```
 复制spf/conf/demo.php为foo.php，修改其中的`worker_class`为上面创建的类名：`\demo\spf\DemoWorker`，启用服务使用spf命令`spf start foo`。
 
-#### spf mvc demo
+#### 2.4.4 spf mvc demo
 使用spf源码中提供的简化版mvc demo代码进行压测，代码省略。启用服务使用spf命令`spf start demo`。
 ```php
 <?php
