@@ -55,10 +55,8 @@ net.ipv4.route.max_size = 5242880
 webbench -c 100 -t 100 http://127.0.0.1:8080/
 ab -c 100 -t 100 -k http://127.0.0.1:8080/ 
 ```
-### 2.3 软件信息
-
-
-#### nginx+php
+### 2.4 软件信息
+#### 2.4.1 nginx+php
 
 版本 nginx/1.8.1，php7.0.8+opcache
 
