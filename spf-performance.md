@@ -156,7 +156,10 @@ Benchmarking: GET http://127.0.0.1:8080/
 
 Speed=3691755 pages/min, 15936083 bytes/sec.
 Requests: 6152925 susceed, 0 failed.
+Requests per second:    61529.25 [#/sec] (mean)
 ```
+![](spf-ori.png)
+
 
 
 ###spf mvc demo
