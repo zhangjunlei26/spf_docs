@@ -141,7 +141,7 @@ class index extends Controller {
 }
 ```
 
-## 测试结果
+## 3 测试结果
 ###nginx+php-fpm
 #### webbench
 ```
