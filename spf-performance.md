@@ -112,4 +112,5 @@ Benchmarking: GET http://test.bao.qq.com/spf/test.php
 
 Speed=1226627 pages/min, 3414113 bytes/sec.
 Requests: 2044379 susceed, 0 failed.
+Requests per second:    20443.79 [#/sec] (mean)
 ```
