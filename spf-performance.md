@@ -182,6 +182,6 @@ Requests per second:    48310.19 [#/sec] (mean)
 1. spf与原生swoole性能相近。
 2. 在hello world场景中，spf与swoole的性能是php-fpm的3倍。
 3. swoole原生测试未能达到swoole官方测试中的287104.12r/s。考虑了一下原因，可能跟linux内核版本低于3.9.0，不能开启REUSEPORT选项有关。因没有新版本linux环境可测试，只能推测原因。
-4. 在增加spf mvc框架的压力测试场景中，随着php执行的代码量增大，cpu使用率上升10%，性能下降到原生swoole的77.55%。
+4. 在增加spf mvc框架的压力测试场景中，因php执行的代码量增大，cpu使用率上升10%，性能下降到原生swoole的77.55%。
 5. php-fpm中如果使用框架也存在同样的性能下降问题，已得到业内测试证实，这里不再浪费时间去对比与spf的差异。
 
