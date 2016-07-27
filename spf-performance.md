@@ -2,14 +2,6 @@
 ## 性能对比
 使用webbench工具对nginx/php-fpm、swoole 原生http、spf http、spf-http-mvc-demo进行压力测试。
 
-| 软件 | QPS |
-| -- | -- |
-| nginx/php-fpm  | 20443.79 |
-| swoole 原生    | 62298.01 |
-| spf http       | 61529.25 |
-| spf mvc demo   | 45203.97 |
-
-
 
 ## 测试环境
 
