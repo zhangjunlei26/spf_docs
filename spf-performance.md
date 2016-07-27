@@ -141,6 +141,7 @@ class index extends Controller {
     }
 }
 ```
+
 ## 测试结果
 ###nginx+php-fpm
 
