@@ -300,6 +300,7 @@ Percentage of the requests served within a certain time (ms)
 ![spf-ori](2-spf-ori.png)
 
 ###spf mvc demo
+#### webbench
 ```
 webbench -c 100 -t 100 http://127.0.0.1:8080/demo/index/index
 Webbench - Simple Web Benchmark 1.5
