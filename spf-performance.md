@@ -266,9 +266,38 @@ Requests per second:    61529.25 [#/sec] (mean)
 
 #### ab
 ````
+ab -k -c 100 -n 5000000 http://127.0.0.1:8080/
+Concurrency Level:      100
+Time taken for tests:   43.328 seconds
+Complete requests:      5000000
+Failed requests:        0
+Keep-Alive requests:    5000000
+Total transferred:      1320000000 bytes
+HTML transferred:       115000000 bytes
+Requests per second:    115398.47 [#/sec] (mean)
+Time per request:       0.867 [ms] (mean)
+Time per request:       0.009 [ms] (mean, across all concurrent requests)
+Transfer rate:          29751.17 [Kbytes/sec] received
 
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       3
+Processing:     0    1   0.4      1      23
+Waiting:        0    1   0.4      1      23
+Total:          0    1   0.4      1      23
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      2
+  99%      2
+ 100%     23 (longest request)
 ````
-
+![spf-ori](2-spf-ori.png)
 
 ###spf mvc demo
 ```
