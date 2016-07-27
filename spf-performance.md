@@ -1,4 +1,4 @@
-s# spf性能
+# spf性能
 ## 性能对比
 使用webbench工具对nginx/php-fpm、swoole http、spf http、spf-http-mvc-demo进行压力测试。
 
@@ -114,5 +114,5 @@ Speed=1226627 pages/min, 3414113 bytes/sec.
 Requests: 2044379 susceed, 0 failed.
 Requests per second:    20443.79 [#/sec] (mean)
 ```
-
+![php-fpm](1-php-fpm.png)
 
