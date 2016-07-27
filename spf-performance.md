@@ -98,3 +98,4 @@ class DemoWorker extends Base implements IWorker
 使用spf源码中提供的简化版mvc demo代码进行压测，代码省略。启用服务使用spf命令`spf start demo`。
 
 ## 测试结果
+###nginx+php-fpm
