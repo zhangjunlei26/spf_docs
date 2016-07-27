@@ -57,7 +57,7 @@ server {
 Nginx开启了4个Worker进程
 php-fpm 最小50进程，最大2000进程
 
-#### swoole+php7.0.8
+#### swoole原生
 测试代码
 ```php
 <?php
