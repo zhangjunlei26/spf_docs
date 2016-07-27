@@ -7,7 +7,7 @@
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
 | spf http       | 61900.49 |
-| spf mvc demo   | 1:3 |
+| spf mvc demo   | 45203.97 |
 
 ## 测试环境
 
@@ -170,5 +170,6 @@ Benchmarking: GET http://127.0.0.1:8080/demo/index/index
 
 Speed=2712238 pages/min, 11707828 bytes/sec.
 Requests: 4520397 susceed, 0 failed.
+Requests per second:    45203.97 [#/sec] (mean)
 ```
 ![spf-demo](spf-demo.png)
