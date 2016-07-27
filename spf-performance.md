@@ -297,7 +297,7 @@ Percentage of the requests served within a certain time (ms)
   99%      2
  100%     23 (longest request)
 ````
-
+![spf-ori](2-spf-ori.png)
 
 ###spf mvc demo
 ```
