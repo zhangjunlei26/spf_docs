@@ -117,3 +117,15 @@ Requests per second:    20443.79 [#/sec] (mean)
 ![php-fpm](1-php-fpm.png)
 
 ###swoole原生
+```
+webbench -c 100 -t 100 http://127.0.0.1:8080/
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+
+Benchmarking: GET http://127.0.0.1:8080/
+100 clients, running 100 sec.
+
+Speed=3737880 pages/min, 16135182 bytes/sec.
+Requests: 6229801 susceed, 0 failed.
+Requests per second:    62298.01 [#/sec] (mean)
+```
