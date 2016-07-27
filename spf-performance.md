@@ -354,10 +354,10 @@ Percentage of the requests served within a certain time (ms)
 ## 4 总结
 | 压力测试用例 | webbench性能QPS | ab性能QPS (KeepAlive) |
 | -- | -- |
-| nginx/php-fpm  | 20443.79 |
-| swoole 原生    | 62298.01 |
-| spf http       | 61529.25 |
-| spf mvc demo   | 48310.19 |
+| nginx/php-fpm  | 20443.79 |     |
+| swoole 原生    | 62298.01 |     |
+| spf http       | 61529.25 |     |
+| spf mvc demo   | 48310.19 |     |
 
 1. spf与原生swoole性能相近。
 2. 在hello world场景中，spf与swoole的性能是php-fpm的3倍。
