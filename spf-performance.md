@@ -247,7 +247,7 @@ Percentage of the requests served within a certain time (ms)
 
 
 ### 3.3 spf http
-#### webbench
+#### 3.3.1 webbench
 
 ```
 webbench -c 100 -t 100 http://127.0.0.1:8080/
