@@ -263,7 +263,7 @@ Requests per second:    61529.25 [#/sec] (mean)
 ```
 ![](spf-ori.png)
 
-#### ab
+#### 3.3.2 ab
 ````
 ab -k -c 100 -n 5000000 http://127.0.0.1:8080/
 Concurrency Level:      100
@@ -298,8 +298,8 @@ Percentage of the requests served within a certain time (ms)
 ````
 ![spf-ori](2-spf-ori.png)
 
-###spf mvc demo
-#### webbench
+### 3.4 spf mvc demo
+#### 3.4.1 webbench
 ```
 webbench -c 100 -t 100 http://127.0.0.1:8080/demo/index/index
 Webbench - Simple Web Benchmark 1.5
