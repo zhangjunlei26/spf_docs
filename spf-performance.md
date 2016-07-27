@@ -212,7 +212,10 @@ Requests per second:    62298.01 [#/sec] (mean)
 ```
 ![swoole](2-swoole.png)
 #### ab
-
+```
+ab -k -c 100 -n 5000000 http://127.0.0.1:8080/
+ 
+```
 
 
 
