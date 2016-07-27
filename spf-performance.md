@@ -5,7 +5,7 @@
 | 软件 | QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
-| swoole 原生    | 1:2 |
+| swoole 原生    | 62298.01 |
 | spf http       | 1:3 |
 | spf mvc demo   | 1:3 |
 
