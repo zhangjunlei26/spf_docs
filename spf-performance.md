@@ -13,15 +13,7 @@
 * 网卡： Intel Corporation 82576 Gigabit Network Connection x2
 * 操作系统：Tencent tlinux release 1.2 (Final) 2.6.32.43-tlinux-1.0.10-default (kbuild@tlinux12) (gcc version 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC) )
 
-
-### 2.2 压测工具
-
-```shell
-webbench -c 100 -t 100 http://127.0.0.1:8080/
-ab -c 100 -t 100 -k http://127.0.0.1:8080/ 
-```
-### 2.3 软件信息
-#### 2.3.1 linux内核参数设置
+### 2.2 linux内核参数
 /etc/security/limits.conf
 ```
 * soft nofile 262140
@@ -56,6 +48,15 @@ net.ipv4.ip_local_port_range = 20000 65000
 net.ipv4.tcp_max_tw_buckets = 200000
 net.ipv4.route.max_size = 5242880
 ```
+
+### 2.2 压测工具
+
+```shell
+webbench -c 100 -t 100 http://127.0.0.1:8080/
+ab -c 100 -t 100 -k http://127.0.0.1:8080/ 
+```
+### 2.3 软件信息
+
 
 #### nginx+php
 
