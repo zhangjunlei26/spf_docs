@@ -144,7 +144,7 @@ class index extends Controller {
 
 ## 测试结果
 ###nginx+php-fpm
-
+#### webbench
 ```
 webbench -c 100 -t 100 http://test.bao.qq.com/spf/test.php
 
@@ -159,6 +159,43 @@ Requests: 2044379 susceed, 0 failed.
 Requests per second:    20443.79 [#/sec] (mean)
 ```
 ![php-fpm](1-php-fpm.png)
+
+#### ab
+```
+ab -k -c 50 -n 1000000 http://test.bao.qq.com/spf/test.php
+Concurrency Level:      50
+Time taken for tests:   58.951 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    0
+Total transferred:      167000000 bytes
+HTML transferred:       12000000 bytes
+Requests per second:    16963.24 [#/sec] (mean)
+Time per request:       2.948 [ms] (mean)
+Time per request:       0.059 [ms] (mean, across all concurrent requests)
+Transfer rate:          2766.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       8
+Processing:     0    3   0.9      3      18
+Waiting:        0    3   0.9      2      18
+Total:          0    3   0.8      3      19
+WARNING: The median and mean for the waiting time are not within a normal deviation
+        These results are probably not that reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      4
+  95%      4
+  98%      5
+  99%      6
+ 100%     19 (longest request) 
+```
+
 
 ###swoole原生
 ```
