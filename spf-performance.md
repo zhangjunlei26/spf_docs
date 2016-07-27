@@ -172,11 +172,12 @@ Requests per second:    45203.97 [#/sec] (mean)
 ![spf-demo](spf-demo.png)
 
 ## 总结
-### 性能结果汇总
+### 性能汇总
 | 压力测试用例 | 性能QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
 | spf http       | 61529.25 |
 | spf mvc demo   | 45203.97 |
+1. spf与原生swoole性能相近。
 
