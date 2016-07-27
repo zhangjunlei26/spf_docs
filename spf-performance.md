@@ -165,9 +165,9 @@ Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 Benchmarking: GET http://127.0.0.1:8080/demo/index/index
 100 clients, running 100 sec.
 
-Speed=2712238 pages/min, 11707828 bytes/sec.
-Requests: 4520397 susceed, 0 failed.
-Requests per second:    45203.97 [#/sec] (mean)
+Speed=2898611 pages/min, 12512344 bytes/sec.
+Requests: 4831019 susceed, 0 failed.
+Requests per second:    48310.19 [#/sec] (mean)
 ```
 ![spf-demo](spf-demo.png)
 
@@ -177,10 +177,10 @@ Requests per second:    45203.97 [#/sec] (mean)
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
 | spf http       | 61529.25 |
-| spf mvc demo   | 45203.97 |
+| spf mvc demo   | 48310.19 |
 
 1. spf与原生swoole性能相近。
 2. 在hello world场景中，spf与swoole的性能是php-fpm的3倍。
 3. swoole原生测试未能达到swoole官方测试中的287104.12r/s。考虑了一下原因，可能跟linux内核版本低于3.9.0，不能开启REUSEPORT选项有关。因没有新版本linux环境可测试，只能推测原因。
-4. 
+4. 在增加spf mvc框架的压力测试场景中，php需执行的代码量急剧增大，cpu
 
