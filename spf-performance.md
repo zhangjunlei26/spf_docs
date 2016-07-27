@@ -21,7 +21,7 @@ webbench -c 100 -t 100 http://127.0.0.1:8080/
 ab -c 100 -t 100 -k http://127.0.0.1:8080/ 
 ```
 ### 2.3 软件信息
-####linux内核参数设置
+#### 2.3.1 linux内核参数设置
 /etc/security/limits.conf
 ```
 * soft nofile 262140
