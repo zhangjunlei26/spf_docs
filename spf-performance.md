@@ -23,7 +23,7 @@
 
 #### nginx+php
 
-版本 nginx/1.8.1、php7.0.8+opcache
+版本 nginx/1.8.1，php7.0.8+opcache
 
 VHOST配置
 ```javascript
