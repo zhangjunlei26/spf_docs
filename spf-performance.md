@@ -172,3 +172,10 @@ Requests per second:    45203.97 [#/sec] (mean)
 ![spf-demo](spf-demo.png)
 
 ## 结论
+| 软件 | QPS |
+| -- | -- |
+| nginx/php-fpm  | 20443.79 |
+| swoole 原生    | 62298.01 |
+| spf http       | 61529.25 |
+| spf mvc demo   | 45203.97 |
+
