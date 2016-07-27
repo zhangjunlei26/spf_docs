@@ -96,7 +96,20 @@ class DemoWorker extends Base implements IWorker
 
 #### spf mvc demo
 使用spf源码中提供的简化版mvc demo代码进行压测，代码省略。启用服务使用spf命令`spf start demo`。
-
+```
+<?php
+namespace demo\controller;
+use syb\oss\Controller;
+class index extends Controller {
+    function actionIndex() {
+        $response = $this->response;
+        $response->header('Last-Modified', 'Tue, 26 Jul 2016 10:24:27 GMT');
+        $response->header('E-Tag', '55829c5b-17');
+        $response->header('Accept-Ranges', 'bytes');
+        $response->end("<h1>\nHello World.\n</h1>");
+    }
+}
+```
 ## 测试结果
 ###nginx+php-fpm
 
