@@ -5,7 +5,7 @@
 
 ## 2 测试环境
 
-### 硬件配置
+### 2.1 硬件配置
 
 * CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 * 内存：8G
@@ -14,13 +14,13 @@
 * 操作系统：Tencent tlinux release 1.2 (Final) 2.6.32.43-tlinux-1.0.10-default (kbuild@tlinux12) (gcc version 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC) )
 
 
-### 压测工具
+### 2.2 压测工具
 
 ```shell
 webbench -c 100 -t 100 http://127.0.0.1:8080/
 ab -c 100 -t 100 -k http://127.0.0.1:8080/ 
 ```
-### 软件信息
+### 2.3 软件信息
 ####linux内核参数设置
 /etc/security/limits.conf
 ```
