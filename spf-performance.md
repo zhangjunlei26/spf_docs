@@ -171,7 +171,7 @@ Requests per second:    45203.97 [#/sec] (mean)
 ```
 ![spf-demo](spf-demo.png)
 
-## 结论
+## 总结
 | 软件 | QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
