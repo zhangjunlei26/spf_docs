@@ -173,7 +173,7 @@ Requests per second:    45203.97 [#/sec] (mean)
 
 ## 总结
 ### 性能结果汇总
-| 压力测试用例 | QPS |
+| 压力测试用例 | 性能QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
