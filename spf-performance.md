@@ -350,7 +350,7 @@ Percentage of the requests served within a certain time (ms)
   99%      3
  100%     27 (longest request)
 ```
-![spf-demo](2-spf-demo.png)
+![](2-spf-demo.png)
 ## 4 总结
 | 压力测试用例 | 性能QPS |
 | -- | -- |
