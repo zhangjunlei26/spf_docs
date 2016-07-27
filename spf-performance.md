@@ -5,7 +5,7 @@ s# spf性能
 | 软件 | QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443 |
-| swoole http    | 1:2 |
+| swoole 原生    | 1:2 |
 | spf http       | 1:3 |
 | spf mvc demo   | 1:3 |
 
