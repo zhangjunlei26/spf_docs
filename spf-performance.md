@@ -145,7 +145,6 @@ class index extends Controller {
 ## 测试结果
 ###nginx+php-fpm
 
-
 ```
 webbench -c 100 -t 100 http://test.bao.qq.com/spf/test.php
 
