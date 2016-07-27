@@ -183,7 +183,6 @@ Waiting:        0    3   0.9      2      18
 Total:          0    3   0.8      3      19
 WARNING: The median and mean for the waiting time are not within a normal deviation
         These results are probably not that reliable.
-
 Percentage of the requests served within a certain time (ms)
   50%      3
   66%      3
