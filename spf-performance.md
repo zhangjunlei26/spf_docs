@@ -6,7 +6,7 @@
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
-| spf http       | 62256.10 |
+| spf http       | 61529.25 |
 | spf mvc demo   | 45203.97 |
 
 ## 测试环境
