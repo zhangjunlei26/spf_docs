@@ -154,11 +154,10 @@ Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 Benchmarking: GET http://127.0.0.1:8080/
 100 clients, running 100 sec.
 
-Speed=3735366 pages/min, 16124330 bytes/sec.
-Requests: 6225610 susceed, 0 failed.
-Requests per second:    62256.10 [#/sec] (mean)
+Speed=3691755 pages/min, 15936083 bytes/sec.
+Requests: 6152925 susceed, 0 failed.
 ```
-![spf](spf-ori.png)
+
 
 ###spf mvc demo
 ```
