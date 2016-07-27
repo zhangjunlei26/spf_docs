@@ -1,11 +1,11 @@
-# spf性能
+s# spf性能
 ## 性能对比
 使用webbench工具对nginx/php-fpm、swoole http、spf http、spf-http-mvc-demo进行压力测试。
 
 | 软件 | QPS |
 | -- | -- |
 | nginx/php-fpm  | 20443 |
-| wwoole http    | 1:2 |
+| swoole http    | 1:2 |
 | spf http       | 1:3 |
 | spf mvc demo   | 1:3 |
 
