@@ -31,7 +31,7 @@ CPU: Intel(R) Xeon(R) CPU X3440  @ 2.53GHz x8
 版本 nginx/1.8.1、php7.0.8+opcache
 
 VHOST配置
-```
+```conf
 server {
     listen 80 default_server;
     root /data/webroot;
