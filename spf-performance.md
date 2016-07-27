@@ -157,6 +157,7 @@ Speed=3714029 pages/min, 16032229 bytes/sec.
 Requests: 6190049 susceed, 0 failed.
 Requests per second:    61900.49 [#/sec] (mean)
 ```
+![spf](spf-ori.png)
 
 ###spf mvc demo
 ```
