@@ -352,7 +352,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 ![](2-spf-demo.png)
 ## 4 总结
-| 压力测试用例 | 性能QPS |
+| 压力测试用例 | webbench性能QPS | ab性能QPS (KeepAlive) |
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
