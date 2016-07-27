@@ -195,7 +195,7 @@ Percentage of the requests served within a certain time (ms)
   99%      6
  100%     19 (longest request) 
 ```
-
+![php-fpm](2-php-fpm.png)
 
 ###swoole原生
 ```
