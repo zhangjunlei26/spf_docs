@@ -6,7 +6,7 @@
 | -- | -- |
 | nginx/php-fpm  | 20443.79 |
 | swoole 原生    | 62298.01 |
-| spf http       | 61900.49 |
+| spf http       | 62256.10 |
 | spf mvc demo   | 45203.97 |
 
 ## 测试环境
@@ -154,9 +154,9 @@ Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 Benchmarking: GET http://127.0.0.1:8080/
 100 clients, running 100 sec.
 
-Speed=3714029 pages/min, 16032229 bytes/sec.
-Requests: 6190049 susceed, 0 failed.
-Requests per second:    61900.49 [#/sec] (mean)
+Speed=3735366 pages/min, 16124330 bytes/sec.
+Requests: 6225610 susceed, 0 failed.
+Requests per second:    62256.10 [#/sec] (mean)
 ```
 ![spf](spf-ori.png)
 
