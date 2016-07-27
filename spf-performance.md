@@ -99,6 +99,14 @@ class DemoWorker extends Base implements IWorker
 
 ## 测试结果
 ###nginx+php-fpm
+webbench -c 100 -t 100 http://test.bao.qq.com/spf/test.php
 ```
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 
+Benchmarking: GET http://test.bao.qq.com/spf/test.php
+100 clients, running 100 sec.
+
+Speed=1226627 pages/min, 3414113 bytes/sec.
+Requests: 2044379 susceed, 0 failed.
 ```
