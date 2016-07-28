@@ -408,4 +408,4 @@ Percentage of the requests served within a certain time (ms)
 
 1. spf与原生swoole性能相近。
 2. KeepAlive支持后，性能提升明显，可能跟linux内核版本低于3.9.0，不能开启REUSEPORT选项有关。
-3. 在增加spf mvc框架的压力测试场景中，因php执行的代码量增大，cpu使用率上升，性能下降到原生swoole的80%。php-fpm中如果使用框架也存在同样的性能下降问题，已得到业内测试证实，这里不再浪费时间去对比与spf的差异。在业务开发中，尽量不要使用太重量的框架，以免对性能影响太明显。
+3. 在增加spf mvc框架的压力测试场景中，因php执行的代码量增大，cpu使用率上升，性能下降到原生swoole的80%。php-fpm中如果使用框架也存在同样的性能下降问题，已得到业内测试证实，。在业务尽量不要使用太重量的框架，以免对性能影响太明显。
