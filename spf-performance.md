@@ -406,8 +406,6 @@ Percentage of the requests served within a certain time (ms)
 | spf http      | 61529.25      | 115398.47           | 
 | spf mvc demo  | 48310.19      | 93453.19            | 
 
-
-
 1. swoole原生场景与spf http场景中，因没有专门的压测服务器，未能充分发挥性能。以至于看起来性能相近。但在KeepAlive场景中可以看出，swoole原生的CPU消耗稍低，如果有专门的压测服务，性能肯定比spf http稍高。
 2. KeepAlive支持后，性能提升明显。一方面，测试用的linux内核版本低于3.9.0，不能开启REUSEPORT选项，建立HTTP短连接需要较高的成本。另一方面，swoole官方压测也是采用KeepAlive方式。
 3. 在增加spf mvc框架的压力测试场景中，因php执行的代码量增大，cpu使用率上升，性能下降到原生swoole的80%。在追求性能的业务场景中，尽量不要使用太重的PHP框架。
